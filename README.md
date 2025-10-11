@@ -25,4 +25,4 @@ The purpose of this website is to keep users organized and improve productivity 
 
 This project is deployed on GitHub Pages:
 
-https://github.com/jacamp421/se_project_todo-app 
+https://jacamp421.github.io/se_project_todo-app/ 

@@ -30,11 +30,10 @@ class FormValidator {
        if (!inputElement.validity.valid) {
     this._showInputError(
       inputElement,
-      this._formEl,
       inputElement.validationMessage,
     );
   } else {
-    this._hideInputError(inputElement, this._formEl);
+    this._hideInputError(inputElement);
   }
     }
 
@@ -80,6 +79,7 @@ class FormValidator {
 
     resetValidation(){
       this._formEl.reset();
+      this._buttonElement.classList.add(this._inactiveButtonClass);
       this._buttonElement.disabled = true; 
 
       this._inputList.forEach((input) => {
