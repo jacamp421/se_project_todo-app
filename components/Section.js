@@ -8,7 +8,6 @@ constructor({ items, renderer, containerSelector }){
 renderItems(){
 this._items.forEach((item)=> {
     const todoElement = this._renderer(item);
-    this._container.append(todoElement);
     })
 }
 addItem(element){
